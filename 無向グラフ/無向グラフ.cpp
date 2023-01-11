@@ -6,7 +6,7 @@ int main(){
     //v: 頂点, e: 辺の数
     int v, e;
     cin >> v >> e;
-    //グラフ作成
+    // グラフ作成
     vector<int> graph[v];
     // 辺を追加する
     for (int i=0;i<e;i++){
@@ -16,7 +16,7 @@ int main(){
         graph[a].push_back(b);
         graph[b].push_back(a);
     }
-    //グラフの表示
+    // グラフの表示
     for(int i=0;i<v;i++){
         cout << i+1 << ": ";
         for(int j=0;j<graph[i].size();j++){
@@ -24,5 +24,6 @@ int main(){
         }
         cout << endl;
     }
+
     return 0;
 }

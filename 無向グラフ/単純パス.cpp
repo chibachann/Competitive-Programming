@@ -1,6 +1,8 @@
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
+
+// 頂点 1 を始点とする単純パスの個数
+// 最大値は10^6
 
 int calc(int num_of_vertices, vector<vector<int>> graph) {
     // ans : 最小のステップ数
